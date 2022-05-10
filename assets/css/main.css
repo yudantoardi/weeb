@@ -1,0 +1,57 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+}
+* {
+  font-family: var(--poppins);
+}
+.sidebar {
+  background-color: #252654;
+}
+.mainContent {
+  background-color: #151436;
+}
+.welcomeBoard {
+  background-color: #252654;
+  border-radius: 2rem;
+}
+.bg-icon {
+  background-color: #2d316b;
+}
+.btn-search {
+  background-color: #252654;
+}
+.input-search {
+  background-color: transparent;
+  border-color: transparent;
+}
+.card {
+  background-color: #252654;
+  border-radius: 25px;
+}
+.card-img-top {
+  border-radius: 30px;
+}
+h5,
+span {
+  color: white;
+}
+.btn-play {
+  position: absolute;
+  top: 90px;
+  right: 40px;
+}
+p {
+  font-size: 14px;
+}
+.rightSidebar {
+  border-radius: 20px;
+}
+.imageSidebar {
+  margin-left: 0px;
+}
+.comments {
+  border-radius: 20px;
+}
+.rightSidebar {
+  background-color: #252654;
+}
