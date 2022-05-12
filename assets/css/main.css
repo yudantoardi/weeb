@@ -6,6 +6,9 @@
 }
 .sidebar {
   background-color: #252654;
+  /* max-width: 300px;
+  position: fixed;
+  overflow-y: scroll; */
 }
 .mainContent {
   background-color: #151436;
@@ -39,6 +42,7 @@ span {
   position: absolute;
   top: 90px;
   right: 40px;
+  background-color: rgba(140, 88, 250, 1);
 }
 p {
   font-size: 14px;
@@ -54,4 +58,26 @@ p {
 }
 .rightSidebar {
   background-color: #252654;
+}
+.rating span {
+  color: #9595d1;
+}
+.btnMoreGames {
+  background-color: rgba(140, 88, 250, 1);
+}
+.btnPlay {
+  background-color: rgba(140, 88, 250, 1);
+}
+.activeSidebar {
+  background-color: rgba(140, 88, 250, 1);
+}
+.page-link {
+  background-color: #252654;
+  border: 0px;
+}
+.page-item-off {
+  padding-top: 5px;
+}
+.page-link-off {
+  text-decoration: none;
 }
