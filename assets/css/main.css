@@ -1,5 +1,6 @@
 :root {
   --poppins: "Poppins", sans-serif;
+  --linear: linear-gradient(270deg, rgba(103,88,250,1) 0%, rgba(140,88,250,1) 100%);
 }
 * {
   font-family: var(--poppins);
@@ -20,7 +21,8 @@
 .bg-icon {
   background-color: #2d316b;
 }
-.btn-search {
+.btn-search,
+.search-form input {
   background-color: #252654;
 }
 .input-search {
@@ -29,10 +31,11 @@
 }
 .card {
   background-color: #252654;
-  border-radius: 25px;
+  border-radius: 20px;
+  margin-bottom: 23px;
 }
 .card-img-top {
-  border-radius: 30px;
+  border-radius: 20px;
 }
 h5,
 span {
@@ -40,9 +43,14 @@ span {
 }
 .btn-play {
   position: absolute;
-  top: 90px;
-  right: 40px;
-  background-color: rgba(140, 88, 250, 1);
+  top: -56px;
+  right: 30px;
+  background: var(--linear);
+}
+.btn-play.btn-relative{
+  position: relative;
+  top: auto;
+  right: auto;
 }
 p {
   font-size: 14px;
@@ -61,12 +69,6 @@ p {
 }
 .rating span {
   color: #9595d1;
-}
-.btnMoreGames {
-  background-color: rgba(140, 88, 250, 1);
-}
-.btnPlay {
-  background-color: rgba(140, 88, 250, 1);
 }
 .activeSidebar {
   background-color: rgba(140, 88, 250, 1);

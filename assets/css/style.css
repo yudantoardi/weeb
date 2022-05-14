@@ -1,0 +1,120 @@
+a{
+    text-decoration: none;
+}
+
+.master{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    width: 300px;
+    left: 0;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.mainContent{
+    float: right;
+    width: calc(100% - 300px);
+}
+.nav{
+    display: block;
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.search-form{
+    width: 100%;
+    max-width: 360px;
+    position: relative;
+}
+.search-form input{
+    padding: 10px 20px 10px 60px;
+    border: none;
+    color: #fff;
+    height: 51px;
+    font-size: 14px;
+}
+.search-form button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+
+header,
+section{
+    width: 100%;
+    float: left;
+    padding: 40px;
+    position: relative;
+}
+footer{
+    width: 100%;
+    float: left;
+    padding: 40px 40px 0 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.login-btn{
+    font-size: 14px;
+    color: #fff;
+    padding: 13px 20px;
+    display: inline-block;
+    float: right;
+}
+.section-title{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.section-title img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+}
+.section-title h3{
+    font-size: 24px;
+    padding-top: 5px;
+    float: left;
+    font-weight: 600;
+}
+.card-body{
+    padding: 20px 20px 30px;
+    position: relative;
+}
+.btn{
+    font-size: 14px;
+    background: #2d316b;
+    border: none;
+    padding: 10px 30px;
+}
+.btn-primary{
+    background: var(--linear);
+    color: #fff;
+}
+.btn-play{
+    width: 48px;
+    height: 48px;
+    padding: 0;
+}
+h5.text-truncate{
+    font-size: 18px;
+}
+.rating.text-truncate{
+    font-size: 14px;
+}
+.rating.text-truncate img{
+    margin-top: -2px;
+}
+.footer h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer hr{
+    color: rgba(255,255,255,0.5) !important;
+}
