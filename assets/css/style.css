@@ -72,6 +72,7 @@ a{
     position: relative;
 }
 .search-form input{
+    width: 100%;
     padding: 10px 20px 10px 60px;
     border: none;
     color: #fff;
@@ -92,6 +93,9 @@ section{
     float: left;
     padding: 40px;
     position: relative;
+}
+header{
+    padding: 24px 40px;
 }
 footer{
     width: 100%;
@@ -197,4 +201,88 @@ h5.text-truncate{
 }
 .pagination .btn.active{
     background: var(--linear);
+}
+.for-mobile{
+    display: none;
+}
+.mobile-header{
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 991px){
+    .for-mobile{
+        display: block;
+    }
+
+    .sidebar{
+        width: 100%;
+        z-index: 99;
+        padding-top: 80px;
+        left: -100%;
+    }
+    .mobile-header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: #262653;
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .mobile-menu{
+        width: 80px;
+        float: left;
+        height: 80px;
+        padding: 20px;
+    }
+    .logo{
+        width: calc(100% - 160px);
+        float: left;
+        height: auto;
+        margin-top: 26px;
+    }
+    header{
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: fixed;
+        z-index: 99;
+        top: 80px;
+        left: 100%;
+        background: #262653;
+    }
+    .login-btn{
+        float: left;
+    }
+    .mainContent{
+        width: 100%;
+        padding-top: 80px;
+    }
+    .search-form input{
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h5.text-truncate{
+        font-size: 16px;
+    }
+    .btn{
+        padding: 10px;
+    }
+    .card-body{
+        padding: 20px 10px;
+    }
+    .welcomeBoard{
+        padding: 10px;
+    }
+    .welcomeBoard h2{
+        font-size: 20px;
+    }
+    .welcomeBoard p{
+        font-size: 14px;
+        line-height: 200%;
+    }
 }
