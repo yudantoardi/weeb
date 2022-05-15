@@ -26,6 +26,46 @@ a{
     overflow-y: auto;
     overflow-x: hidden;
 }
+.nav-item{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    transition: all ease-out 0.3s;
+}
+.nav-item a{
+    display: block;
+    width: 100%;
+    float: left;
+    height: 60px;
+    border-radius: 30px;
+    padding: 17px 10px 10px 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255,255,255,0.8);
+    transition: all ease-out 0.3s;
+}
+.nav-item a:hover{
+    color: rgba(140,88,250,1);
+}
+.nav-item.active a{
+    background: var(--linear);
+    color: rgba(255,255,255,0.8);
+}
+.nav-item.active a:hover{
+    color: #fff;
+}
+.nav-item.active a .nav-icon{
+    background: #fff;
+}
+.nav-icon{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    margin-top: -7px;
+    background: #313169;
+    border-radius: 50%;
+}
 .search-form{
     width: 100%;
     max-width: 360px;
@@ -97,6 +137,10 @@ footer{
     background: var(--linear);
     color: #fff;
 }
+.btn-secondary{
+    background: #262653;
+    color: #fff;
+}
 .btn-play{
     width: 48px;
     height: 48px;
@@ -117,4 +161,40 @@ h5.text-truncate{
 }
 .footer hr{
     color: rgba(255,255,255,0.5) !important;
+}
+
+.rightSidebar{
+    padding: 20px;
+}
+.widget-title h5{
+    line-height: 200%;
+    margin-bottom: 20px;
+    float: left;
+}
+.comments{
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    float: left;
+}
+.comments h3.text-secondary{
+    width: 100%;
+    float: left;
+}
+.pagination{
+    width: 100%;
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+.pagination a{
+    display: inline-block;
+    margin: 0 5px;
+}
+.pagination .btn{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.pagination .btn.active{
+    background: var(--linear);
 }

@@ -57,6 +57,9 @@ p {
 }
 .rightSidebar {
   border-radius: 20px;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
 }
 .imageSidebar {
   margin-left: 0px;
@@ -86,3 +89,31 @@ p {
 .btnSet {
   background-color: #262653;
 }
+.post-list{
+  width: 100%;
+  float: left;
+}
+.post-item{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+.post-item:last-child{
+  margin-bottom: 0;
+}
+.post-item .post-thumb{
+  float: left;
+}
+.post-item .post-text{
+  width: calc(100% - 50px);
+  float: left;
+  padding-left: 15px;
+}
+.post-item .post-text h5{
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 150%;
+}
+
