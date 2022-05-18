@@ -1,6 +1,10 @@
 :root {
   --poppins: "Poppins", sans-serif;
-  --linear: linear-gradient(270deg, rgba(103,88,250,1) 0%, rgba(140,88,250,1) 100%);
+  --linear: linear-gradient(
+    270deg,
+    rgba(103, 88, 250, 1) 0%,
+    rgba(140, 88, 250, 1) 100%
+  );
 }
 * {
   font-family: var(--poppins);
@@ -49,7 +53,7 @@ span {
   right: 30px;
   background: var(--linear);
 }
-.btn-play.btn-relative{
+.btn-play.btn-relative {
   position: relative;
   top: auto;
   right: auto;
@@ -91,31 +95,55 @@ p {
 .btnSet {
   background-color: #262653;
 }
-.post-list{
+.post-list {
   width: 100%;
   float: left;
 }
-.post-item{
+.post-item {
   width: 100%;
   float: left;
   margin-bottom: 20px;
 }
-.post-item:last-child{
+.post-item:last-child {
   margin-bottom: 0;
 }
-.post-item .post-thumb{
+.post-item .post-thumb {
   float: left;
 }
-.post-item .post-text{
+.post-item .post-text {
   width: calc(100% - 50px);
   float: left;
   padding-left: 15px;
 }
-.post-item .post-text h5{
+.post-item .post-text h5 {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 0;
   line-height: 150%;
 }
-
+.imgPoster {
+  border-radius: 20px;
+  width: 100%;
+}
+.container-latest {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.latestContent {
+  background-color: #252654;
+  border-radius: 2rem;
+  padding: 30px;
+}
+.btn-sm {
+  background: transparent;
+}
+.login-btn img {
+  width: 100%;
+}
+.btn-dropdown {
+  background: transparent;
+}
+.error-404 {
+  border-radius: 2rem;
+}
