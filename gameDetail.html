@@ -23,11 +23,11 @@
     <div class="master">
         <div class="sidebar">
             <div class="mobile-header">
-                <div class="mobile-menu for-mobile">
+                <div id="menu1" class="mobile-menu for-mobile">
                     <img src="assets/images/icon/burger.svg" alt="">
                 </div>
                 <img class="logo" src="assets/images/weebgame.png" alt="">
-                <div class="mobile-menu for-mobile">
+                <div id="menu2" class="mobile-menu for-mobile">
                     <img src="assets/images/icon/v-ellipsis.svg" alt="">
                 </div>
             </div>
@@ -173,14 +173,44 @@
         <div class="mainContent">
             <header>
                 <div class="row">
-                    <div class="col-md-4 p-2">
+                    <div class="col-md-4 p-2 mt-2">
                         <form action="" class="search-form">
                             <input type="text" class="rounded-pill" placeholder="Search games...">
                             <button><img src="assets/images/icon/search.svg" alt=""></button>
                         </form>
                     </div>
                     <div class="col-md-8 p-2">
-                        <a href="#" class="login-btn">Login</a>
+                        <div class="main-nav">
+                            <div class="nav-item user-nav ms-3">
+                                <a href="#" class="login-btn"><img src="assets/images/bank/ava1.png" alt=""></a>
+                                <div class="sub-menu">
+                                    <div class="info">
+                                        <h6>Username</h6>
+                                        <span class="text-orange">@jamesbond_007</span>
+                                    </div>
+                                    <a href="#">My Profile</a>
+                                    <a href="#">Edit Profile</a>
+                                    <a href="#"><span class="text-orange">Logout</span></a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#">Blog</a>
+                            </div>
+                            <div class="nav-item me-3">
+                                <a href="#">Dropdown <img src="assets/images/icon/caret-down.svg" alt=""></a>
+                                <div class="sub-menu">
+                                    <a href="#">Action</a>
+                                    <a href="#">Another Action</a>
+                                    <a href="#">Something Else Here</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#">Sample Page</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -634,6 +664,8 @@
 
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

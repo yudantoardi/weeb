@@ -22,11 +22,11 @@
     <div class="master">
         <div class="sidebar">
             <div class="mobile-header">
-                <div class="mobile-menu for-mobile">
+                <div id="menu1" class="mobile-menu for-mobile">
                     <img src="assets/images/icon/burger.svg" alt="">
                 </div>
                 <img class="logo" src="assets/images/weebgame.png" alt="">
-                <div class="mobile-menu for-mobile">
+                <div id="menu2" class="mobile-menu for-mobile">
                     <img src="assets/images/icon/v-ellipsis.svg" alt="">
                 </div>
             </div>
@@ -179,181 +179,198 @@
                         </form>
                     </div>
                     <div class="col-md-8 p-2">
-                        <a href="#" class="login-btn"><img src="assets/images/bank/ava1.png" alt=""></a>
-                        <a href="#" class="login-btn mt-2">Contact Us</a>
-                        <a href="#" class="login-btn mt-2">Blog</a>
-                        <a href="#" class="mt-2">
-                            <div class="login-btn">
-                                <a class="btn-dropdown text-light dropdown-toggle mt-2" type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                        <div class="main-nav">
+                            <div class="nav-item user-nav ms-3">
+                                <a href="#" class="login-btn"><img src="assets/images/bank/ava1.png" alt=""></a>
+                                <div class="sub-menu">
+                                    <div class="info">
+                                        <h6>Username</h6>
+                                        <span class="text-orange">@jamesbond_007</span>
+                                    </div>
+                                    <a href="#">My Profile</a>
+                                    <a href="#">Edit Profile</a>
+                                    <a href="#"><span class="text-orange">Logout</span></a>
+                                </div>
                             </div>
-                        </a>
-
-                        <a href="#" class="login-btn mt-2">Sample Page</a>
+                            <div class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#">Blog</a>
+                            </div>
+                            <div class="nav-item me-3">
+                                <a href="#">Dropdown <img src="assets/images/icon/caret-down.svg" alt=""></a>
+                                <div class="sub-menu">
+                                    <a href="#">Action</a>
+                                    <a href="#">Another Action</a>
+                                    <a href="#">Something Else Here</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#">Sample Page</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
             <section>
-                <div class="container-latest">
+                <div class="container">
                     <!-- SECTION NEW GAMES -->
-                    <div class="row mt-4 mb-5">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-title">
-                                    <img src="assets/images/icon/clock.svg" alt="" class="rounded-circle bg-icon ">
-                                    <h3 class="text-white">Latest Post</h3>
+                    <div class="row mt-4">
+                        <div class="col-md-11 mx-auto">
+                            <div class="section-title">
+                                <img src="assets/images/icon/clock.svg" alt="" class="rounded-circle bg-icon ">
+                                <h3 class="text-white">Latest Post</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="latestContent col-md-11 mx-auto">
+                            <div class="card">
+                                <div class="card-img">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
+                                        Trick</a>
+                                    <a href="#" type="button"
+                                        class="btn rounded-pill btn-sm text-light">Reviews</a>
+                                    <h5 class="mt-4 ">What a amazing game and great tricks</h5>
+                                    <p class="text-white-50">Published on March, 14 2021</p>
+                                    <p class="text-white-50" style="max-height: 500px;">
+                                        Playing the game has
+                                        no restrictions on the
+                                        user's age, height,
+                                        intelligence or moodiness. the mood for the time play a
+                                        games intelligence or moodiness. the mood for the time play a
+                                        games</p>
+                                    <a href="#" type="button"
+                                        class="btn btn-primary btn-lg rounded-pill mt-3">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
+                                        Trick</a>
+                                    <a href="#" type="button"
+                                        class="btn rounded-pill btn-sm text-light">Reviews</a>
+                                    <h5 class="mt-4 ">What a amazing game and great tricks</h5>
+                                    <p class="text-white-50">Published on March, 14 2021</p>
+                                    <p class="text-white-50" style="max-height: 500px;">
+                                        Playing the game has
+                                        no restrictions on the
+                                        user's age, height,
+                                        intelligence or moodiness. the mood for the time play a
+                                        games intelligence or moodiness. the mood for the time play a
+                                        games</p>
+                                    <a href="#" type="button"
+                                        class="btn btn-primary btn-lg rounded-pill mt-3">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
+                                        Trick</a>
+                                    <a href="#" type="button"
+                                        class="btn rounded-pill btn-sm text-light">Reviews</a>
+                                    <h5 class="mt-4 ">What a amazing game and great tricks</h5>
+                                    <p class="text-white-50">Published on March, 14 2021</p>
+                                    <p class="text-white-50" style="max-height: 500px;">
+                                        Playing the game has
+                                        no restrictions on the
+                                        user's age, height,
+                                        intelligence or moodiness. the mood for the time play a
+                                        games intelligence or moodiness. the mood for the time play a
+                                        games</p>
+                                    <a href="#" type="button"
+                                        class="btn btn-primary btn-lg rounded-pill mt-3">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
+                                        Trick</a>
+                                    <a href="#" type="button"
+                                        class="btn rounded-pill btn-sm text-light">Reviews</a>
+                                    <h5 class="mt-4 ">What a amazing game and great tricks</h5>
+                                    <p class="text-white-50">Published on March, 14 2021</p>
+                                    <p class="text-white-50" style="max-height: 500px;">
+                                        Playing the game has
+                                        no restrictions on the
+                                        user's age, height,
+                                        intelligence or moodiness. the mood for the time play a
+                                        games intelligence or moodiness. the mood for the time play a
+                                        games</p>
+                                    <a href="#" type="button"
+                                        class="btn btn-primary btn-lg rounded-pill mt-3">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
+                                        Trick</a>
+                                    <a href="#" type="button"
+                                        class="btn rounded-pill btn-sm text-light">Reviews</a>
+                                    <h5 class="mt-4 ">What a amazing game and great tricks</h5>
+                                    <p class="text-white-50">Published on March, 14 2021</p>
+                                    <p class="text-white-50" style="max-height: 500px;">
+                                        Playing the game has
+                                        no restrictions on the
+                                        user's age, height,
+                                        intelligence or moodiness. the mood for the time play a
+                                        games intelligence or moodiness. the mood for the time play a
+                                        games</p>
+                                    <a href="#" type="button"
+                                        class="btn btn-primary btn-lg rounded-pill mt-3">Read
+                                        More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="latestContent col-12">
-                                <div class="p-1">
-                                    <div class="row">
-                                        <div class="col-8 mt-3 ">
-                                            <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
-                                                Trick</a>
-                                            <a href="#" type="button"
-                                                class="btn rounded-pill btn-sm text-light">Reviews</a>
-                                            <h5 class="mt-4 ">What a amazing game and great tricks</h5>
-                                            <p class="text-white-50">Published on March, 14 2021</p>
-                                            <p class="text-white-50" style="max-height: 500px;">
-                                                Playing the game has
-                                                no restrictions on the
-                                                user's age, height,
-                                                intelligence or moodiness. the mood for the time play a
-                                                games intelligence or moodiness. the mood for the time play a
-                                                games</p>
-                                            <a href="#" type="button"
-                                                class="btn btn-primary btn-lg rounded-pill mt-3">Read
-                                                More</a>
-                                        </div>
-                                        <div class="col-4">
-                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="latestContent col-12">
-                                <div class="p-1">
-                                    <div class="row">
-                                        <div class="col-8 mt-3 ">
-                                            <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
-                                                Trick</a>
-                                            <h5 class="mt-4 ">What a amazing game and great tricks</h5>
-                                            <p class="text-white-50">Published on March, 14 2021</p>
-                                            <p class="text-white-50" style="max-height: 500px;">
-                                                Playing the game has
-                                                no restrictions on the
-                                                user's age, height,
-                                                intelligence or moodiness. the mood for the time play a
-                                                games intelligence or moodiness. the mood for the time play a
-                                                games</p>
-                                            <a href="#" type="button"
-                                                class="btn btn-primary btn-lg rounded-pill mt-3">Read
-                                                More</a>
-                                        </div>
-                                        <div class="col-4">
-                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="latestContent col-12">
-                                <div class="p-1">
-                                    <div class="row">
-                                        <div class="col-8 mt-3 ">
-                                            <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
-                                                Trick</a>
-                                            <h5 class="mt-4 ">What a amazing game and great tricks</h5>
-                                            <p class="text-white-50">Published on March, 14 2021</p>
-                                            <p class="text-white-50" style="max-height: 500px;">
-                                                Playing the game has
-                                                no restrictions on the
-                                                user's age, height,
-                                                intelligence or moodiness. the mood for the time play a
-                                                games intelligence or moodiness. the mood for the time play a
-                                                games</p>
-                                            <a href="#" type="button"
-                                                class="btn btn-primary btn-lg rounded-pill mt-3">Read
-                                                More</a>
-                                        </div>
-                                        <div class="col-4">
-                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="latestContent col-12">
-                                <div class="p-1">
-                                    <div class="row">
-                                        <div class="col-8 mt-3 ">
-                                            <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
-                                                Trick</a>
-                                            <h5 class="mt-4 ">What a amazing game and great tricks</h5>
-                                            <p class="text-white-50">Published on March, 14 2021</p>
-                                            <p class="text-white-50" style="max-height: 500px;">
-                                                Playing the game has
-                                                no restrictions on the
-                                                user's age, height,
-                                                intelligence or moodiness. the mood for the time play a
-                                                games intelligence or moodiness. the mood for the time play a
-                                                games</p>
-                                            <a href="#" type="button"
-                                                class="btn btn-primary btn-lg rounded-pill mt-3">Read
-                                                More</a>
-                                        </div>
-                                        <div class="col-4">
-                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="latestContent col-12">
-                                <div class="p-1">
-                                    <div class="row">
-                                        <div class="col-8 mt-3 ">
-                                            <a href="#" type="button" class="btn rounded-pill btn-xs text-light">Tips &
-                                                Trick</a>
-                                            <h5 class="mt-4 ">What a amazing game and great tricks</h5>
-                                            <p class="text-white-50">Published on March, 14 2021</p>
-                                            <p class="text-white-50" style="max-height: 500px;">
-                                                Playing the game has
-                                                no restrictions on the
-                                                user's age, height,
-                                                intelligence or moodiness. the mood for the time play a
-                                                games intelligence or moodiness. the mood for the time play a
-                                                games</p>
-                                            <a href="#" type="button"
-                                                class="btn btn-primary btn-lg rounded-pill mt-3">Read
-                                                More</a>
-                                        </div>
-                                        <div class="col-4">
-                                            <img src="assets/images/bank/pic-17.jpg" class="imgPoster" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-center">
+                            <a href="#" type="button" class="btn rounded-pill btn-primary btn-sm text-light mt-3">View More</a>
                         </div>
 
                     </div>
-                    <div class="text-center"><a href="#" type="button"
-                            class="btn rounded-pill btn-primary btn-sm text-light">View
-                            More</a></div>
+                    
+
+                    
                 </div>
             </section>
 
@@ -402,6 +419,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+        <script src="assets/js/jquery-1.11.0.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/main.js"></script>
 
 </body>
 
