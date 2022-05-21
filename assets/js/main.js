@@ -7,12 +7,12 @@
 
 
 $(document).ready(function(){
-    $(".burger").click(function(){
-        $(".side-menu").toggleClass("show");
+    $("#menu1").click(function(){
+        $(".sidebar").toggleClass("show");
     });
 
-    $(".side-header .bt-more").click(function(){
-        $(".header").toggleClass("show");
+    $("#menu2").click(function(){
+        $("header").toggleClass("show");
     });
 
     var $el = $(".user-pic a");

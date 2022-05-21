@@ -96,6 +96,7 @@ section{
 }
 header{
     padding: 24px 40px;
+    z-index: 999;
 }
 footer{
     width: 100%;
@@ -108,7 +109,7 @@ footer{
     color: #fff;
     padding: 13px 20px;
     display: inline-block;
-    float: right;
+    min-width: 50px;
 }
 .section-title{
     width: 100%;
@@ -209,6 +210,91 @@ h5.text-truncate{
     margin-bottom: 60px;
 }
 
+.latestContent .card{
+    width: 100%;
+    float: left;
+    background-color: #252654;
+    border-radius: 2rem;
+    padding: 15px;
+    display: block;
+}
+.latestContent .card .card-img{
+    width: 100%;
+    max-width: 380px;
+    float: right;
+}
+.latestContent .card .card-body{
+    float: left;
+    width: calc(100% - 380px);
+    padding: 20px;
+}
+
+.main-nav{
+    text-align: right;
+}
+.main-nav .nav-item{
+    width: auto;
+    float: right;
+    margin-bottom: 0;
+    position: relative;
+}
+.main-nav .nav-item a{
+    font-size: 14px;
+    height: 50px;
+    padding: 20px;
+}
+.main-nav .nav-item a img{
+    vertical-align: bottom;
+    transform: translateY(10px);
+    position: absolute;
+    top: 0;
+}
+.sub-menu{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: left;
+    background: #252654;
+    border-radius: 10px;
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.nav-item:hover .sub-menu{
+    opacity: 1;
+    pointer-events: auto;
+}
+.main-nav .nav-item .sub-menu a,
+.sub-menu .info{
+    padding: 15px 20px;
+    display: block;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+}
+.main-nav .nav-item .sub-menu a:last-child{
+    border-bottom: none;
+}
+.sub-menu .info{
+    color: #fff;
+    font-size: 14px;
+}
+.sub-menu .info h6{
+    font-size: 14px;
+}
+.text-orange{
+    color: #FF7A41 !important;
+}
+.main-nav .nav-item a.login-btn img{
+    top: 0;
+    left: 0;
+    transform: translateY(7px);
+}
+
+
 @media only screen and (max-width: 991px){
     .for-mobile{
         display: block;
@@ -219,6 +305,10 @@ h5.text-truncate{
         z-index: 99;
         padding-top: 80px;
         left: -100%;
+        transition: all ease-out 0.3s;
+    }
+    .sidebar.show{
+        left: 0;
     }
     .mobile-header{
         position: fixed;
@@ -249,6 +339,11 @@ h5.text-truncate{
         top: 80px;
         left: 100%;
         background: #262653;
+        transition: all ease-out 0.3s;
+        overflow-y: auto;
+    }
+    header.show{
+        left: 0;
     }
     .login-btn{
         float: left;
@@ -284,5 +379,53 @@ h5.text-truncate{
     .welcomeBoard p{
         font-size: 14px;
         line-height: 200%;
+    }
+
+    .latestContent .card .card-body{
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-nav{
+        text-align: left;
+    }
+    .main-nav .nav-item{
+        display: block;
+        width: 100%;
+        float: left;
+        margin-left: 0 !important;
+    }
+    .main-nav .nav-item a img{
+        position: absolute;
+        right: 0;
+        transform: translateY(-10px);
+    }
+    .sub-menu{
+        position: relative;
+        width: 100%;
+        background: rgba(255,255,255,0.05);
+        opacity: 1;
+        float: left;
+        overflow: hidden;
+        height: 0;
+        transition: all ease-out 0.3s;
+    }
+    .nav-item:hover .sub-menu{
+        height: auto;
+    }
+    .main-nav .nav-item a.login-btn{
+        height: auto;
+        padding: 20px 0 20px 20px;
+    }
+    .main-nav .nav-item a.login-btn img{
+        width: 50px;
+        height: 50px;
+        float: left;
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+    .main-nav .nav-item.user-nav .sub-menu{
+        height: auto;
     }
 }
