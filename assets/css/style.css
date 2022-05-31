@@ -401,6 +401,7 @@ h5.text-truncate{
         position: absolute;
         right: 0;
         transform: translateY(-10px);
+        top: 18px;
     }
     .sub-menu{
         position: relative;
