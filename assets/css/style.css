@@ -575,4 +575,11 @@ h5.text-truncate {
     .main-nav .nav-item.user-nav .sub-menu{
         height: auto;
     }
+
+    .comments{
+      margin-bottom: 40px;
+    }
+    .bt-group{
+      margin-bottom: 20px;
+    }
 }
