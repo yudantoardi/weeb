@@ -318,7 +318,8 @@ h5.text-truncate {
     height: 80px;
     margin-bottom: 0;
     padding-right: 153px;
-    width: 991px;
+    width: 100vw;
+    padding-right: 0;
   }
   .mobile-menu {
     width: 80px;
@@ -334,8 +335,6 @@ h5.text-truncate {
     height: auto;
     margin-top: 26px;
     width: 30%;
-    margin-left: 182px;
-    margin-right: 61px;
   }
   header {
     width: 100%;
