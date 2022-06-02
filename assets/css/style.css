@@ -437,4 +437,7 @@ h5.text-truncate {
   .dropdownNav {
     margin-top: 17px;
   }
+  .btnOpen {
+    margin-top: 10px;
+  }
 }
