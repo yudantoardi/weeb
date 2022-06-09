@@ -36,4 +36,22 @@ $(document).ready(function(){
         });
     }
 
+    var $smb = $(".nav-item a img");
+    var $smm = $(".sub-menu");
+    $smb.click(function(sm){
+        sm.stopPropagation();
+        sm.preventDefault();
+        $(".sub-menu").removeClass("show");
+        $($(this).parent()).siblings(".sub-menu").addClass("show");
+    });
+    $(document).on('click',function(sm){
+        if(($(sm.target) != $smb) && ($smm.hasClass('show'))){
+            $smm.removeClass('show');
+        }
+    });
+    /*$(".nav-item a img").click(function(){
+        $(".sub-menu").removeClass("show");
+        $($(this).parent()).siblings(".sub-menu").addClass("show");
+    });*/
+
 });

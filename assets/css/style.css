@@ -262,7 +262,7 @@ h5.text-truncate {
   pointer-events: none;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
-.nav-item:hover .sub-menu {
+.sub-menu.show {
   opacity: 1;
   pointer-events: auto;
 }
@@ -415,9 +415,6 @@ h5.text-truncate {
     height: 0;
     transition: all ease-out 0.3s;
   }
-  .nav-item:hover .sub-menu {
-    height: auto;
-  }
   .main-nav .nav-item a.login-btn {
     height: auto;
     padding: 20px 0 20px 20px;
@@ -560,7 +557,7 @@ h5.text-truncate {
         height: 0;
         transition: all ease-out 0.3s;
     }
-    .nav-item:hover .sub-menu{
+    .sub-menu.show{
         height: auto;
     }
     .main-nav .nav-item a.login-btn{
